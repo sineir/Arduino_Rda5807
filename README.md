@@ -5,5 +5,6 @@
 - Talvez adicionar um modulo ds3231 para o relogio e usar a eeprom para memória do rádio.
 
 ### Bibliotecas
-*[pu2clr](https://pu2clr.github.io/RDA5807/).
+*RDA5807 [pu2clr](https://pu2clr.github.io/RDA5807/).
+*LedControl [pu2clr](https://www.pjrc.com/teensy/td_libs_LedControl.html).
 
