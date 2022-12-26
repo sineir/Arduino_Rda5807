@@ -7,4 +7,3 @@
 ### Bibliotecas
 *RDA5807 [pu2clr](https://pu2clr.github.io/RDA5807/).
 *LedControl [pu2clr](https://www.pjrc.com/teensy/td_libs_LedControl.html).
-

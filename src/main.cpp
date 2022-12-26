@@ -127,9 +127,6 @@ void setup()
   /* Rotary Encoder: */
   pinMode(pinA, INPUT_PULLUP);
   pinMode(pinB, INPUT_PULLUP);
-  /* Read Pin A
-  Whatever state it's in will reflect the last position
-  */
   pinALast = digitalRead(pinA);
 
   // max7219
@@ -159,17 +156,7 @@ void setup()
   rx.setVolume(8);
 
   delay(500);
-  /*
-  Serial.print("\nEstacao 106.5MHz");
-  rx.setFrequency(9930); // The frequency you want to select in MHz multiplied by 100.
 
-  Serial.print("\nCurrent Channel: ");
-  Serial.print(rx.getRealChannel());
-  delay(500);
-
-  Serial.print("\nReal Frequency.: ");
-  Serial.print(rx.getRealFrequency());
-*/
   Serial.print("\nRSSI: ");
   Serial.print(rx.getRssi());
 
@@ -184,17 +171,6 @@ void setup()
   Serial.print("\nEstacao 99.3MHz");
   rx.setFrequency(myfreq);
   delay(1000);
-
-  /*
-  // Seek test
-  Serial.print("\nSeek station");
-  for (int i = 0; i < 10; i++ ) {
-    rx.seek(1,0);
-    Serial.print("\nReal Frequency.: ");
-    Serial.print(rx.getRealFrequency());
-    delay(5000);
-  }
-  */
 }
 
 void loop()
